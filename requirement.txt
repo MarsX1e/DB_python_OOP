@@ -1,0 +1,26 @@
+1) Create a class for User. User should have two properties passed to it: id and name.
+2)   Create a class for DB. The DB should have no properties passed to it when it’s invoked. (In other words, the class shouldn’t expect any parameters to be passed to it when its invoked)
+
+a.     The class should have a list called contents (please do not call it anything else.)
+
+b.     This class should have a property called next_id. It should be initialized at 1. (self.next_id =1)
+
+c.      This class should have a few functions under it (all functions will take self as a parameter passed to it):
+
+                                               i.     One function should be called create. This function should create a User (more on the users in a second) and add it to the list called contents. When adding a user, it should give that user a unique id number. (Take a look at next_id. This is your hint on how to do this)No other user should be able to have that same id as another user in the db.
+
+ 
+                                              ii.     One of these functions should be called all.  This functions purpose is to return a list of all the users in the database.  It does not expect any parameters to be passed to it.
+
+ 
+                                            iii.     One function should be called get. This functions purpose is to get ONLY one match based on the id it was passed. Once it gets that match, it should return it to the caller.  If it doesn’t find a match, it should return None.
+
+                                            iv.     One of the functions should be called filter.  This function will take one parameter called name. This function will return a list of all users with the same name passed to this function.  Even if it doesn’t find a match, it should return an empty list!
+
+                                              v.     One of the functions should be called exclude.  This function will take one parameter called name. This function will return a list of all users that doesn’t have the same name passed to this function. 
+
+d.     Invoke this class, and store it under the name UserDB.
+
+
+
+ 
